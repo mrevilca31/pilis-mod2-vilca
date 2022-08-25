@@ -120,3 +120,53 @@ header {
   color: rgb(66, 66, 66);
   font-weight: 700;
 }
+
+/* SECCION EVENTO */
+
+.evento-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: rgb(45, 45, 45);
+  height: 85vh;
+  padding: 5% 2%;
+
+  background-color: rgba(105, 199, 192, 0.1);
+}
+
+.evento-texto {
+  text-align: center;
+  padding: 2% 3%;
+  width: 50%;
+}
+
+.evento-subtitulo {
+  font-size: 60px;
+  font-weight: 900;
+
+  text-decoration-line: underline;
+  text-decoration-style: "solid";
+  text-decoration-color: rgba(251, 176, 25, 0.98);
+  text-decoration-thickness: 7px;
+}
+
+.evento-descripcion {
+  font-size: 23px;
+  font-weight: 600;
+  padding-top: 38px;
+  text-align: left;
+  line-height: 28px;
+}
+
+.evento-video {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  height: 100%;
+}
