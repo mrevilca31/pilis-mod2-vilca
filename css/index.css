@@ -132,7 +132,7 @@ header {
   height: 85vh;
   padding: 5% 2%;
 
-  background-color: rgba(105, 199, 192, 0.1);
+  background: linear-gradient(90deg, #f7e18d, #fbae19);
 }
 
 .evento-texto {
@@ -144,11 +144,6 @@ header {
 .evento-subtitulo {
   font-size: 60px;
   font-weight: 900;
-
-  text-decoration-line: underline;
-  text-decoration-style: "solid";
-  text-decoration-color: rgba(251, 176, 25, 0.98);
-  text-decoration-thickness: 7px;
 }
 
 .evento-descripcion {
@@ -171,39 +166,168 @@ header {
   height: 100%;
 }
 
-
-.nosotros{
+/* SECCION NOSOTROS */
+.nosotros {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, #fd96b3, #f92b93);
-  heigth: 85vh;
+  height: 85vh;
   padding: 5% 2%;
 }
 
-.nosotros-texto{
+.nosotros-texto {
   padding-left: 60px;
   padding-right: 60px;
-
 }
-.nosotros-texto h1{
+.nosotros-texto h1 {
   font-size: 60px;
   font-weight: 900;
   text-align: center;
 
   margin-bottom: 30px;
-  
 }
-.nosotros-texto p{
+.nosotros-texto p {
   font-size: 23px;
   font-weight: 600;
   padding-top: 38px;
   text-align: left;
   line-height: 28px;
-
 }
 
-.nosotros-imagen{
+.nosotros-imagen {
   padding-left: 3%;
+}
 
+/* SECCION REGISTRO */
+
+.registro {
+  background: linear-gradient(90deg, #8ae0da, #076cb2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80vh;
+}
+
+.registro-texto {
+  height: 60%;
+  width: 50%;
+  padding-left: 7%;
+  padding-right: 2%;
+  color: rgb(45, 45, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro-texto .registro-subtitulo {
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 15px;
+  color: rgb(45, 45, 45);
+}
+
+.registro-texto .registro-descripcion {
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 38px;
+  text-align: left;
+  line-height: 35px;
+}
+
+.registro-form {
+  width: 50%;
+  padding-left: 2%;
+  padding-right: 7%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro-form form {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 6.3px 6.7px 5.3px rgba(0, 0, 0, 0.04),
+    21px 22.3px 17.9px rgba(0, 0, 0, 0.06), 94px 100px 80px rgba(0, 0, 0, 0.1);
+
+  width: 75%;
+  border-radius: 7px;
+  padding: 3% 0;
+}
+
+.registro-form .campo {
+  width: 88%;
+  margin: 4% 6%;
+  border-radius: 7px;
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  outline: none;
+  padding: 8px;
+  color: rgb(10, 10, 10);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.campo::placeholder {
+  color: #818181;
+}
+
+.campo:focus {
+  border-bottom: 2.5px solid #5f5f5f;
+}
+
+.enviar {
+  text-align: center;
+  padding: 25px 0 10px;
+}
+
+.btn-enviar {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgb(40, 40, 40);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 25px;
+  border: 0.1px solid #414141;
+}
+
+.btn-enviar:hover {
+  background-color: rgba(7, 108, 178, 0.7);
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 16vh;
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-texto {
+  margin-bottom: 9px;
+}
+
+.enlace-wsp {
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.logo-wsp {
+  height: 22px;
+  padding-left: 5px;
 }
