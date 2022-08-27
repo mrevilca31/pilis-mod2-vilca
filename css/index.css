@@ -65,13 +65,13 @@ header {
 }
 
 .enlaces-navbar #enlace-nosotros:hover {
-  background-color: rgb(249, 43, 147);
+  background-color: #10c28f;
   border-radius: 8px;
   transition: 0.5s;
 }
 
 .enlaces-navbar #enlace-registro:hover {
-  background-color: rgb(7, 108, 178);
+  background-color: rgb(9, 122, 202);
   border-radius: 8px;
   transition: 0.5s;
 }
@@ -82,7 +82,7 @@ header {
 }
 
 .logo-navbar a img {
-  height: 100%;
+  height: 90%;
 }
 
 /* HOME */
@@ -109,16 +109,16 @@ header {
   margin-top: 10px;
   padding-top: 30px;
   font-size: 40px;
-  color: rgb(66, 66, 66);
-  font-weight: 700;
+  color: rgb(45, 45, 45);
+  font-weight: 900;
 }
 
 .home-subtitulo {
   margin-top: 5px;
   padding-top: 10px;
   font-size: 30px;
-  color: rgb(66, 66, 66);
-  font-weight: 700;
+  color: rgb(45, 45, 45);
+  font-weight: 900;
 }
 
 /* SECCION EVENTO */
@@ -144,6 +144,7 @@ header {
 .evento-subtitulo {
   font-size: 60px;
   font-weight: 900;
+  padding-bottom: 15px;
 }
 
 .evento-descripcion {
@@ -171,7 +172,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #fd96b3, #f92b93);
+  /* background: linear-gradient(90deg, #fd96b3, #f92b93); */
+  background: linear-gradient(60deg, #8deed2, #0bac7e);
   height: 85vh;
   padding: 5% 2%;
 }
@@ -185,25 +187,26 @@ header {
   font-size: 60px;
   font-weight: 900;
   text-align: center;
-
-  margin-bottom: 30px;
+  color: rgb(50, 50, 50);
+  padding-bottom: 15px;
 }
 .nosotros-texto p {
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 600;
   padding-top: 38px;
   text-align: left;
-  line-height: 28px;
+  line-height: 30px;
+  color: rgb(50, 50, 50);
 }
 
 .nosotros-imagen {
   padding-left: 2%;
   width: 50%;
-
 }
 
 .nosotros-imagen img {
   width: 95%;
+  border-radius: 7px;
 }
 
 /* SECCION REGISTRO */
@@ -213,7 +216,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   height: 80vh;
 }
 
@@ -238,11 +240,11 @@ header {
 }
 
 .registro-texto .registro-descripcion {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
   padding-top: 38px;
   text-align: left;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .registro-form {
@@ -273,7 +275,7 @@ header {
   border-bottom: 1px solid #c2c2c2;
   outline: none;
   padding: 8px;
-  color: rgb(10, 10, 10);
+  color: rgb(5, 5, 5);
   font-size: 18px;
   font-weight: 500;
 }
@@ -295,15 +297,17 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   cursor: pointer;
-  color: rgb(40, 40, 40);
+  color: rgb(60, 60, 60);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   padding: 8px 25px;
-  border: 0.1px solid #414141;
+  border: none;
+  box-shadow: 13.3px 10.7px 10.3px rgba(0, 0, 0, 0.04),
+    21px 22.3px 17.9px rgba(0, 0, 0, 0.06), 94px 100px 80px rgba(0, 0, 0, 0.1);
 }
 
 .btn-enviar:hover {
-  background-color: rgba(7, 108, 178, 0.7);
+  background-color: rgba(3, 72, 121, 0.9);
   border: none;
   color: white;
   transition: 0.5s;
@@ -312,28 +316,59 @@ header {
 /* SECCION PRONOSTICO */
 
 .pronostico {
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #c9cecd, #3c4952);
+  padding-top: 2%;
+  padding-bottom: 5%;
+
+  /* background: linear-gradient(90deg, #f7e18d, #fbae19); */
+  /* background: linear-gradient(90deg, #fd96b3, #f92b93); */
+  background-color: rgba(218, 199, 199, 0.78);
 }
 
-.pronostico-info{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 120px;
+.pronostico-texto {
+  font-size: 60px;
+  font-weight: 900;
+  color: rgb(45, 45, 45);
+  padding-bottom: 15px;
 }
 
+.pronostico-info {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: rgba(224, 112, 7, 0.4);
+  box-shadow: 6.3px 6.7px 5.3px rgba(0, 0, 0, 0.04),
+    21px 22.3px 17.9px rgba(0, 0, 0, 0.06), 94px 100px 80px rgba(0, 0, 0, 0.1);
+  width: 25%;
+  text-align: center;
+  border-radius: 15px;
+}
 
+.clima-lugar {
+  font-size: 25px;
+}
+
+.temp {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+.otra-temp {
+  font-size: 19px;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.icon-clima {
+}
 
 /* FOOTER */
 
 .footer {
-  height: 16vh;
+  height: 20vh;
   background-color: rgb(66, 66, 66);
   display: flex;
   flex-direction: column;
@@ -359,5 +394,3 @@ header {
   height: 22px;
   padding-left: 5px;
 }
-
-
