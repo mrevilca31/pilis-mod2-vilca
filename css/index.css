@@ -302,6 +302,27 @@ header {
   transition: 0.5s;
 }
 
+/* SECCION PRONOSTICO */
+
+.pronostico {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #c9cecd, #3c4952);
+}
+
+.pronostico-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+
+
+
 /* FOOTER */
 
 .footer {
@@ -331,3 +352,5 @@ header {
   height: 22px;
   padding-left: 5px;
 }
+
+
