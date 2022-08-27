@@ -179,6 +179,7 @@ header {
 .nosotros-texto {
   padding-left: 60px;
   padding-right: 60px;
+  width: 50%;
 }
 .nosotros-texto h1 {
   font-size: 60px;
@@ -196,7 +197,13 @@ header {
 }
 
 .nosotros-imagen {
-  padding-left: 3%;
+  padding-left: 2%;
+  width: 50%;
+
+}
+
+.nosotros-imagen img {
+  width: 95%;
 }
 
 /* SECCION REGISTRO */
